@@ -1,7 +1,6 @@
 
 import asyncio
 import sys
-import os
 import websockets
 import json
 import logging
@@ -29,7 +28,7 @@ async def send_message(message):
     if LAM:
         uri = "wss://hpmew9eepf.execute-api.eu-west-1.amazonaws.com/prod"  # Example URL - change this to your endpoint
     else:
-        uri = "ws://localhost:2772" #"wss://sptpubgl4e.execute-api.eu-west-1.amazonaws.com/Prod"
+        uri = "ws://localhost:2772" 
 
     try:
         async with websockets.connect(uri) as websocket:
