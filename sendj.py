@@ -1,7 +1,7 @@
 
 import asyncio
 import sys
-from commonpy.log_handler import os
+import os
 import websockets
 import json
 import logging
