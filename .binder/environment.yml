@@ -12,3 +12,4 @@ dependencies:
     - aiostream
     - git+https://github.com/eyalk11/sunfish
     - websockets
+    - voila
