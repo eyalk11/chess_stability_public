@@ -20,7 +20,7 @@ class Calculator:
     async def async_ret_stats(self,b,turn):
         if turn!=b.turn:
             raise Exception("Turns doesnt match" )
-        field='stability all','stability same','stability diff','moves by depth','analysis_time_seconds' 
+        field='score','stability all','stability same','stability diff','moves by depth','analysis_time_seconds' 
         res= (await self.sendit(b.fen()))
         if not res:
             return 
